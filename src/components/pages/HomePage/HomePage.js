@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 
-import mazeImage from "../../../assets/images/maze.svg";
 import "./HomePage.css";
 
 class HomePage extends Component {
@@ -56,11 +55,11 @@ class HomePage extends Component {
       <div className="HomePage">
         <div>
           <div className="HomePage__image">
-            <img src={mazeImage} alt="" />
+            <img src="https://raw.githubusercontent.com/LantareCode/box-of-code/master/CSS/SuperMario-Animation/images/mariowalking/walk2.gif" alt="" />
           </div>
           <div className="HomePage__heading">
-            <h1>Maze Game</h1>
-            <p>The Ulitimate Maze You will never get out in this life time</p>
+            <h1>Mario Maze</h1>
+            <p>Just pick up the mushrooms already!</p>
           </div>
           <div className="HomePage__gridSize">
             {mazeSizeInputValueError ? (

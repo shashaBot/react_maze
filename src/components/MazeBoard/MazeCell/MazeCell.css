@@ -5,21 +5,35 @@
     align-items: center;
   }
   
+  .MazeCell__image--mushroom {
+    width: 60%;
+    height: 60%;
+    background: url('../../../assets/images/mushroom_green.png') left center;
+    background-size: cover;
+  }
+
   .MazeCell__image--mario {
-    max-width: 80%;
-    max-height: 80%;
+    position: relative;
+    width: 70%;
+    height: 70%;
+    background: url('https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/mariowalking/result.png') left center;
+    background-size: cover;
+    -webkit-animation: play 0.8s steps(4) infinite;
+    
+    animation: play 0.8s steps(4) infinite;
   }
-  
+
   .MazeCell__image--mario--leftSide {
-    transform: scaleX(1);
-  }
-  
-  .MazeCell__image--mario--rightSide {
     transform: scaleX(-1);
   }
   
-  .MazeCell__image--mushroom {
-    max-width: 60%;
-    max-height: 60%;
+  .MazeCell__image--mario--rightSide {
+    transform: scaleX(1);
   }
-  
+
+  @-webkit-keyframes play{
+      100%{background-position: -400%;}
+  }
+  @keyframes play{
+      100%{background-position: -400%;}
+  }

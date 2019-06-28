@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "howler": "^2.1.2",
+    "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
@@ -13,7 +14,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint ./ --ignore-path .gitignore",
+    "docker:dev:run": "docker-compose -f docker-compose.yml -f docker-compose.dev.yml up --build",
+    "docker:dev:stop": "docker-compose -f docker-compose.yml -f docker-compose.dev.yml down -v && && docker image prune -f",
+    "docker:dev:test": "docker-compose -f docker-compose.yml -f docker-compose.dev.yml run -e NODE_ENV=test frontend npm test",
+    "docker:prod:run": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml up --build",
+    "docker:prod:stop": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml down -v && docker image prune -f",
+    "docker:prod:push": "(docker-compose -f docker-compose.yml -f docker-compose.prod.yml build) && (docker tag react_maze_image-prod shashabot/react_maze_image-prod:latest) && (docker push shashabot/react_maze_image-prod:latest)"    
   },
   "eslintConfig": {
     "extends": "react-app"

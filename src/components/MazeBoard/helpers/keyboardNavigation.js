@@ -1,4 +1,4 @@
-import { walkSound } from "./musicHandler";
+// import { walkSound } from "./musicHandler";
 
 /*  Validating direction is possible or not through current row & column. 
      (For ex. when we are in the top row we should not be able to go further up.*/

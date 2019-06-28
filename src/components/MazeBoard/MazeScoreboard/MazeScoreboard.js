@@ -22,7 +22,7 @@ export default class MazeScoreboard extends Component {
     return (
       <div className="MazeScoreboard">
         <MazeScoreboardInfo title="Steps" text={steps} />
-        <MazeScoreboardInfo title="Catched" text={catchedMushroomes} />
+        <MazeScoreboardInfo title="Caught" text={catchedMushroomes} />
         <MazeScoreboardInfo
           title="Remaining"
           text={mazeSize - catchedMushroomes}

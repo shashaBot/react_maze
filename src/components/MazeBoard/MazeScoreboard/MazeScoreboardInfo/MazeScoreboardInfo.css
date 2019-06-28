@@ -1,0 +1,59 @@
+.MazeScoreboardInfo {
+    background: rgb(10, 95, 134);
+    color: rgb(255, 253, 253);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    border-right: none;
+  }
+  
+  .MazeScoreboardInfo:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .MazeScoreboardInfo:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .MazeScoreboardInfo__titleWrapper {
+    padding: 10px;
+    padding-right: 0;
+  }
+  
+  .MazeScoreboardInfo__title {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+  }
+  
+  .MazeScoreboardInfo__text {
+    padding: 0 15px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: hsl(46, 83%, 66%);
+  }
+  
+  .MazeScoreboardInfo__icon svg {
+    width: 100%;
+    height: 100%;
+    max-width: 40px;
+    fill: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .MazeScoreboardInfo__icon svg {
+      max-width: 20px;
+    }
+  
+    .MazeScoreboardInfo__text {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .MazeScoreboardInfo {
+      flex-wrap: wrap;
+    }
+  }
+  

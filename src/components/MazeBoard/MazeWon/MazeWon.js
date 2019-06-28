@@ -21,7 +21,7 @@ class MazeWon extends Component {
         <div className="MazeWon_statistics">
           <MazeScoreboardInfo title="Steps" text={steps} />
           <MazeScoreboardInfo title="Score" text={score} />
-          <MazeScoreboardInfo title="Catched" text={catchedMushroomes} />
+          <MazeScoreboardInfo title="Caught" text={catchedMushroomes} />
         </div>
         <div
           className="MazeWon_playAgainButton"

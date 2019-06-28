@@ -3,6 +3,7 @@
     padding: 20px;
     border-radius: 7px;
     background: rgba(18, 19, 18, 0.527);
+    position: relative;
   }
   
   .MazeBoard__scoreboard {

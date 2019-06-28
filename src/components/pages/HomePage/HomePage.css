@@ -1,5 +1,5 @@
 .HomePage {
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +52,8 @@
   
   .HomePage__gridSize__input {
     height: 50px;
-    width: 350px;
+    width: 90%;
+    max-width: 350px;
     font-size: 1.23rem;
     text-align: center;
     border-radius: 7px 7px 0 0;
@@ -71,7 +72,7 @@
   }
   
   .HomePage__startButton {
-    width: 100%;
+    width: 90%;
     max-width: 350px;
     cursor: pointer;
     margin: 15px auto;
@@ -91,8 +92,9 @@
   
   .HomePage__smallIntro {
     text-transform: capitalize;
-    color: rgb(44, 43, 43);
+    color: rgb(226, 226, 226);
     margin: 0 20px;
+    max-width: 90%;
   }
   
   @media screen and (max-width: 768px) {

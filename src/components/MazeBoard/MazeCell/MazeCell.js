@@ -2,7 +2,6 @@ import React, { Component } from "react";
 // import { Howl } from "howler";
 
 import "./MazeCell.css";
-import marioSVG from "../../../assets/images/mario.svg";
 import mushroomSVG from "../../../assets/images/mushroom_green.png";
 
 export default class MazeCell extends Component {
@@ -45,7 +44,7 @@ export default class MazeCell extends Component {
           : "MazeCell__image--mario--rightSide";
 
       cellImage = {
-        src: marioSVG,
+        src: '',
         className: `MazeCell__image--mario ${mariosDirectionStyle}`
       };
     } else if (mushroomPositions.includes(cellId)) {
@@ -71,11 +70,10 @@ export default class MazeCell extends Component {
 
     return (
       <div className={`MazeCell MazeCell__${cellId}`}>
-        <img
+        <div
           className={`MazeCell__image ${cellImageData.className}`}
-          src={cellImageData.src}
-          alt=""
-        />
+        >
+        </div>
       </div>
     );
   }

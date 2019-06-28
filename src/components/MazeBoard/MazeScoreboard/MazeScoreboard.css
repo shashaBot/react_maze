@@ -1,0 +1,35 @@
+.MazeScoreboard {
+    position: relative;
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(209, 203, 203);
+  }
+  
+  .MazeScoreboard__musicButton {
+    position: absolute;
+    background: ;
+    border: 2px solid white;
+    border-radius: 50%;
+    left: -40px;
+    top: -40px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+  
+  .MazeScoreboard__musicButton--playing {
+    background: url("../../../assets/images/musicPlaying.svg") #df4d60;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+  }
+  
+  .MazeScoreboard__musicButton--stopped {
+    background: url("../../../assets/images/musicStopped.svg") #df4d60;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+  }
+  

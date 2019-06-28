@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+
+  react_app:
+    container_name: react_maze-dev
+    build:
+      context: .
+      target: dev
+    command: npm start
+    image: react_maze_image-dev
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - '3001:3000'
+    environment:
+      - NODE_ENV=development

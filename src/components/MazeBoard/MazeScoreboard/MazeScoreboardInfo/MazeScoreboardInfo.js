@@ -10,7 +10,7 @@ function decideIcon(iconName) {
   switch (iconName) {
     case "Steps":
       return StepsIcon;
-    case "Catched":
+    case "Caught":
       return CatchedIcon;
     case "Remaining":
       return RemainingIcon;
