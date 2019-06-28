@@ -6,6 +6,9 @@ A dockerized react application for Mario maze game.
 2. Try to collect all mushrooms in minimum number of steps.
 3. Voila! Your score is displayed along with your status when you clear the field.
 
+## Demo
+![Demo](https://raw.githubusercontent.com/shashaBot/react_maze/master/resources/demo.gif)
+
 ## How to develop
 1. Fork and clone using `git clone`
 2. `npm install` in root directory to install dependencies.
