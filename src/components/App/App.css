@@ -1,0 +1,7 @@
+.App {
+    background: url("../../assets/images/appBackground.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  

@@ -1,0 +1,21 @@
+.MazeBoard {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 7px;
+    background: rgba(18, 19, 18, 0.527);
+  }
+  
+  .MazeBoard__scoreboard {
+    display: flex;
+  }
+  
+  .MazeBoard__grid {
+    margin: 0 auto;
+    border-radius: 7px;
+    background: rgba(235, 255, 245, 0.67);
+    width: calc(80vmin - 100px);
+    height: calc(80vmin - 100px);
+    display: grid;
+    border: rgba(102, 99, 99, 0.247) solid 0.1px;
+  }
+  

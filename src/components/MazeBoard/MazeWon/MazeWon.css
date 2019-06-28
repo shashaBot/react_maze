@@ -1,0 +1,40 @@
+.MazeWon {
+    background: rgba(245, 244, 244, 0.753);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px;
+  }
+  
+  .MazeWon img {
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .MazeWon__details p {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(202, 76, 17);
+  }
+  
+  .MazeWon_statistics {
+    display: flex;
+  }
+  
+  .MazeWon_playAgainButton {
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 7px;
+    background: rgb(62, 177, 52);
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .MazeWon_playAgainButton:hover {
+    background: rgb(175, 177, 52);
+  }
+  

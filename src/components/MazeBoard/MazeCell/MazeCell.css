@@ -1,0 +1,25 @@
+.MazeCell {
+    border: rgba(102, 99, 99, 0.247) solid 0.1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .MazeCell__image--mario {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+  .MazeCell__image--mario--leftSide {
+    transform: scaleX(1);
+  }
+  
+  .MazeCell__image--mario--rightSide {
+    transform: scaleX(-1);
+  }
+  
+  .MazeCell__image--mushroom {
+    max-width: 60%;
+    max-height: 60%;
+  }
+  
